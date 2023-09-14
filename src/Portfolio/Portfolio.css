@@ -1,0 +1,36 @@
+.portfolio{
+}
+
+.layout{
+    background-color: #1abc9c;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+
+.imgContainer:hover .layout{
+    opacity: 0.9;
+
+}
+
+.imgLayout{
+    width: 500px;
+
+}
+
+#boxContainer{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #2c3e508d;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
