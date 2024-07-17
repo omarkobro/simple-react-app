@@ -2,60 +2,61 @@ import React, { useEffect, useState } from 'react'
 import "./Contact.css"
 
 export default function Contact() {
-  // let nameLabel = document.getElementById("nameLabel");
-  // let ageLabel = document.getElementById("ageLabel");
-  // let emailLabel = document.getElementById("emailLabel");
-  // let passwordLabel = document.getElementById("passwordLabel");
-  // let userName = document.getElementById("userName");
-  // let userAge = document.getElementById("userAge");
-  // let userEmail = document.getElementById("userEmail");
-  // let userPassword = document.getElementById("userPassword");
 
 
-  // function showLabel(){
-  //   if(userName.value !== ""){
-  //     nameLabel.style.top = "0"
-  //     nameLabel.style.display = "block"
-  //   }
-  //   else if(userName.value === ""){
-  //     nameLabel.style.top = "60px"
-  //     nameLabel.style.display = "none"
 
-  //   }
-  //   if(userAge.value !== ""){
-  //     ageLabel.style.top = "0"
-  //     ageLabel.style.display = "block"
-  //   }
-  //   else if(userAge.value === ""){
-  //     ageLabel.style.top = "60px"
-  //     ageLabel.style.display = "none"
+  function showLabel(){
+    let nameLabel = document.getElementById("nameLabel");
+    let ageLabel = document.getElementById("ageLabel");
+    let emailLabel = document.getElementById("emailLabel");
+    let passwordLabel = document.getElementById("passwordLabel");
+    let userName = document.getElementById("userName");
+    let userAge = document.getElementById("userAge");
+    let userEmail = document.getElementById("userEmail");
+    let userPassword = document.getElementById("userPassword");
+    if(userName.value !== ""){
+      nameLabel.style.top = "0"
+      nameLabel.style.display = "block"
+    }
+    else if(userName.value === ""){
+      nameLabel.style.top = "60px"
+      nameLabel.style.display = "none"
 
-  //   }
-  //   if(userEmail.value !== ""){
-  //     emailLabel.style.top = "0"
-  //     emailLabel.style.display = "block"
+    }
+    if(userAge.value !== ""){
+      ageLabel.style.top = "0"
+      ageLabel.style.display = "block"
+    }
+    else if(userAge.value === ""){
+      ageLabel.style.top = "60px"
+      ageLabel.style.display = "none"
 
-  //   }
-  //   else if(userEmail.value === ""){
-  //     emailLabel.style.top = "60px"
-  //     emailLabel.style.display = "none"
+    }
+    if(userEmail.value !== ""){
+      emailLabel.style.top = "0"
+      emailLabel.style.display = "block"
 
-  //   }
+    }
+    else if(userEmail.value === ""){
+      emailLabel.style.top = "60px"
+      emailLabel.style.display = "none"
 
-  //   if(userPassword.value !== ""){
-  //     passwordLabel.style.top = "0"
-  //     passwordLabel.style.display = "block"
+    }
 
-  //   }
-  //   else if(userPassword.value === ""){
-  //     passwordLabel.style.top = "60px"
-  //     passwordLabel.style.display = "none"
-  //   }
-  // }
+    if(userPassword.value !== ""){
+      passwordLabel.style.top = "0"
+      passwordLabel.style.display = "block"
 
-  // useEffect(()=>{
-  //   showLabel()
-  // },[])
+    }
+    else if(userPassword.value === ""){
+      passwordLabel.style.top = "60px"
+      passwordLabel.style.display = "none"
+    }
+  }
+
+  useEffect(()=>{
+    showLabel()
+  },[])
 
   return (
     <>
@@ -69,7 +70,7 @@ export default function Contact() {
       </div>
       <form className="form-control mt-5 w-50 mx-auto text-start">
         <label  id='nameLabel' htmlFor="userName">userName</label>
-        <input  id='userName' type="text" placeholder='userName' className="form-control bg-transparent mb-4" />
+        <input   id='userName' type="text" placeholder='userName' className="form-control bg-transparent mb-4" />
         <label id='ageLabel' htmlFor="userAge">userAge</label>
         <input   id='userAge' type="text" placeholder='userAge' className="form-control bg-transparent mb-4" />
         <label id='emailLabel' htmlFor="userEmail">userEmail</label>
